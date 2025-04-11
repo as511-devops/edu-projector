@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: edu-projector-job
+spec:
+  template:
+    spec:
+      containers:
+        - name: edu-projector-job
+          image: ghcr.io/as511-devops/edu-projector:pr-2
+          command: ["python", "cleanup.py"]
+      restartPolicy: Never
+  backoffLimit: 2

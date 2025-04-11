@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: edu-projector-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: edu-projector
+  template:
+    metadata:
+      labels:
+        app: edu-projector
+    spec:
+      containers:
+        - name: edu-projector
+          image: ghcr.io/as511-devops/edu-projector:pr-1
+          ports:
+            - containerPort: 8080
