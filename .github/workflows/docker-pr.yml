@@ -2,7 +2,11 @@ name: Build Docker image on PR
 
 on:
   pull_request:
-    branches: [ main]
+    branches: [ main ]
+
+permissions:
+  contents: read
+  packages: write
 
 jobs:
   build-and-push:
