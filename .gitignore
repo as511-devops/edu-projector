@@ -1,1 +1,4 @@
 kind
+.venv
+*.log
+__pycache__
