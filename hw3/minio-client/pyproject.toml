@@ -1,0 +1,14 @@
+[project]
+name = "minio-client"
+version = "0.1.0"
+dependencies = [
+    "minio",
+    "pytest"
+]
+
+[build-system]
+requires = ["uv"]
+build-backend = "uv"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
