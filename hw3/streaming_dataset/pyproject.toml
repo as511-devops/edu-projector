@@ -1,0 +1,10 @@
+[project]
+name = "streaming-dataset"
+version = "0.1.0"
+dependencies = [
+    "datasets"
+]
+
+[build-system]
+requires = ["uv"]
+build-backend = "uv"
