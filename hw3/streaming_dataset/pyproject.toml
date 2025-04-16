@@ -2,7 +2,8 @@
 name = "streaming-dataset"
 version = "0.1.0"
 dependencies = [
-    "datasets"
+    "datasets",
+    "pandas"
 ]
 
 [build-system]

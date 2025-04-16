@@ -1,24 +1,21 @@
-# StreamingDataset Conversion
+## TL;DR
+✅ Generates synthetic data
 
-This script converts a static dataset into a streaming-capable format using a `StreamingDataset` wrapper. This is useful when working with large datasets that cannot fit entirely into memory or when training models that require continuous data flow.
+✅ Saves it as Parquet
 
-## 📦 What It Does
+✅ Loads it using Hugging Face datasets in streaming mode
 
-- Loads a dataset from disk (e.g. CSV, JSON, or image folders)
-- Wraps the dataset into a `StreamingDataset`-style generator or iterator
-- Streams data sample-by-sample instead of loading everything at once
-- Prepares data for memory-efficient model training or evaluation
+✅ Prints the first 5 streamed samples
 
-## 📚 How It Works
-
-1. **Data Source**  
-   The input dataset can be in CSV, JSON, Parquet, or any format supported by Pandas or native Python I/O.
-
-2. **Streaming Dataset Class**  
-   Implements a custom `StreamingDataset` class (or uses one from a framework like PyTorch or MosaicML) that yields data items on-the-fly.
-
-3. **No Full Dataset in Memory**  
-   Only one or a few samples are kept in memory at a time, ideal for large-scale workloads.
-
-## 🔧 Example Usage
-
+## Output example
+```bash
+📦 Generating synthetic dataset...
+✅ Saved dataset to data/train.parquet
+🌊 Loading dataset in streaming mode...
+🔍 First 5 streamed samples:
+{'feature1': 0.0067, 'feature2': 0.3225, 'label': 1}
+{'feature1': 0.5448, 'feature2': 0.4295, 'label': 1}
+{'feature1': 0.1787, 'feature2': 0.1798, 'label': 1}
+{'feature1': 0.5507, 'feature2': 0.7426, 'label': 1}
+{'feature1': 0.3801, 'feature2': 0.0328, 'label': 0}
+```
