@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: edu-projector
-          image: ghcr.io/as511-devops/edu-projector:pr-1
+          image: ghcr.io/as511-devops/edu-projector:pr-2
           ports:
             - containerPort: 8080
