@@ -1,0 +1,14 @@
+[project]
+name = "pandas-benchmark"
+version = "0.1.0"
+dependencies = [
+    "pandas",
+    "numpy",
+    "pyarrow",
+    "feather-format",
+    "pytest"
+]
+
+[build-system]
+requires = ["uv"]
+build-backend = "uv"
