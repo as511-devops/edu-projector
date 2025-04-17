@@ -1,0 +1,5 @@
+outs:
+- md5: 610fc0ffbb275a85b9dbe368900d9d0a
+  size: 40763
+  hash: md5
+  path: banking_support_500_ukr.csv
