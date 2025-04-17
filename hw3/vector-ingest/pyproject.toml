@@ -1,0 +1,11 @@
+[project]
+name = "vector-ingest"
+version = "0.1.0"
+dependencies = [
+    "qdrant-client",
+    "sentence-transformers"
+]
+
+[build-system]
+requires = ["uv"]
+build-backend = "uv"
