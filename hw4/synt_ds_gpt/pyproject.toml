@@ -1,0 +1,13 @@
+[project]
+name = "synthetic-dataset"
+version = "0.1.0"
+description = "Generate synthetic support chat dataset using OpenAI and save to CSV"
+dependencies = [
+    "openai",
+    "pandas",
+    "python-dotenv"
+]
+
+[build-system]
+requires = ["uv"]
+build-backend = "uv"
