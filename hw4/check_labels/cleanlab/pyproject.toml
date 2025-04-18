@@ -1,0 +1,12 @@
+[project]
+name = "check-labels"
+version = "0.1.0"
+dependencies = [
+    "pandas",
+    "scikit-learn",
+    "cleanlab"
+]
+
+[build-system]
+requires = ["uv"]
+build-backend = "uv"
